@@ -6,7 +6,7 @@ import './header.css';
 export default function Header(props) {
   return (
     <div className='header-container'>
-      <image src='../images/barbershop outside.jpg' />
+      {/* <image src='../images/barbershop outside.jpg' /> */}
       <h1>NEED A BARBER?</h1>
       <p>Find one at the click of a button</p>
       <div className='header-btns'>
