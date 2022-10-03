@@ -1,6 +1,6 @@
 import React from "react";
 import CardItem from "./Carditem";
-import './Cards.css';
+import '../styles/Cards.css';
 
 export default function Cards() {
   return (

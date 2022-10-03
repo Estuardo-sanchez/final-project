@@ -1,10 +1,10 @@
-import './App.css';
+import './styles/App.css';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Home from './components/pages/Home';
-import FormSignup from './components/pages/FormSignup';
-import Login from './components/pages/Login';
-import Map from './components/pages/Map';
+import Home from './pages/Home';
+import FormSignup from './pages/FormSignup';
+import Login from './pages/Login';
+import Map from './pages/Map';
 
 function App() {
   return (
