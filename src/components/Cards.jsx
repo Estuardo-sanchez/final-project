@@ -1,6 +1,6 @@
 import React from "react";
 import CardItem from "./Carditem";
-import './Cards.css';
+import '../styles/Cards.css';
 
 export default function Cards() {
   return (
@@ -13,7 +13,7 @@ export default function Cards() {
               src='https://www.travellens.co/content/images/2022/01/Hamilton.jpeg'
               text="Local hamilton shops"
               label="Hamilton"
-              path=''
+              path='Map'
             />
             <CardItem
               src='https://i.natgeofe.com/n/20d65599-d2e3-49e7-9641-a10b25aa8df2/toronto-travel.jpg'

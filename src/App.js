@@ -1,9 +1,10 @@
-import './App.css';
+import './styles/App.css';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Home from './components/pages/Home';
-import SignUp from './components/pages/SignUp';
-import Login from './components/pages/Login';
+import Home from './pages/Home';
+import FormSignup from './pages/FormSignup';
+import Login from './pages/Login';
+import Map from './pages/Map';
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
       <Routes>
         <Route exact path='/' >
         <Route index element={<Home />} />
-        <Route path='sign-up' element={<SignUp />} />
+        <Route path='sign-up' element={<FormSignup />} />
         <Route path='login' element={<Login />} />
+        <Route path='Map' element={<Map />} />
         </Route>
       </Routes>
     </Router>
