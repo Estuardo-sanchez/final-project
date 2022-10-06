@@ -1,0 +1,83 @@
+.side-bar {
+  padding: 1.5em;
+  width: 365px;
+  background: linear-gradient(to bottom, rgb(21, 21, 21) 80%, gray);
+  background-color: rgb(38, 36, 36);
+  position: fixed;
+  height: 95%;
+  overflow: auto;
+}
+.sidebar--centered {
+  align-self: center;
+}
+.sidebar__separator {
+  width: 90%;
+  margin: 2rem 0;
+  border: solid 1px;
+  color: #f2f2f2;
+}
+.sidebar__menu {
+  flex: 1;
+}
+.sidebar__lhl {
+  margin-top: 2rem;
+}
+
+.schedule {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 2rem 0;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.side-barbershop-img {
+  height: 200px;
+  width: 300px;
+  border-radius: 25px;
+  flex: 1;
+  padding: 0.5em;
+  /* padding-top: 30px; */
+}
+
+.address-text {
+  font-size: small;
+  color: #e9e3e3;
+  padding-bottom: 10px;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.sidebar-barbershop-name {
+  color: #e9e3e3;
+  font-size: 17.5px;
+  padding-bottom: 10px;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+@media only screen and (max-width: 960px) {
+  html {
+    font-size: 12px;
+  }
+  .layout {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 320px) {
+  html {
+    font-size: 10px;
+  }
+}

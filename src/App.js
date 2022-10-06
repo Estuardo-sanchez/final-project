@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import FormSignup from './pages/FormSignup';
 import Login from './pages/Login';
 import Map from './pages/Map';
+import { AdminPage } from './pages/AdminPage';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='sign-up' element={<FormSignup />} />
         <Route path='login' element={<Login />} />
         <Route path='Map' element={<Map />} />
+        <Route path='Admin-page' element={<AdminPage />} />
         </Route>
       </Routes>
     </Router>
