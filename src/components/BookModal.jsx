@@ -1,27 +1,41 @@
 
-import { useState, useEffect } from 'react';
 import '../styles/BookModal.css';
-import React from "react";
-import axios from "axios";
+import {useRef} from "react";
+import axios from 'axios';
 
-export default function BookModal({ open, onClose }) {
 
-  const [shops, setShops] = useState([]);
+export default function BookModal({ open, onClose, barbershopId, barbershopName }) {
 
-  useEffect(() => {
-    axios.get('http://localhost:8000/api/barbershops')
-      .then((res) => {
-        setShops(res.data.barbershops);
+  const nameInput = useRef();
+  const lastNameInput = useRef();
+  const emailInput = useRef();
+  const phoneInput = useRef();
+  const dateInput = useRef();
+  const timeInput = useRef();
 
-      })
-  }, [])
 
+  function handleBookAppointment(e) {
+    e.preventDefault()
+
+    const formData = {
+      name: nameInput.current.value,
+      last_name: lastNameInput.current.value,
+      email: emailInput.current.value,
+      phone: phoneInput.current.value,
+      date: dateInput.current.value,
+      start_time: timeInput.current.value,
+      barbershop_id: barbershopId
+    }
+
+    axios.post('http://localhost:8000/api/appointments', formData)
+    .then(res => console.log(res)) // send to thank you page
+  }
+
+  
   if (!open) {
     return null
   }
   return (
-    shops.map(shop => (
-
       <div className="overlay">
         <div className="modal-container">
 
@@ -34,33 +48,33 @@ export default function BookModal({ open, onClose }) {
 
 
                   <div className="container">
-                    <div className="title">Registration</div>
+                    <div className="title">Book an appointment to {barbershopName}</div>
                     <div className="content">
-                      <form action="#">
+                      <form onSubmit={handleBookAppointment}>
                         <div className="user-details">
                           <div className="input-box">
                             <span className="details">First Name</span>
-                            <input type="text" placeholder="Enter your first name" required />
+                            <input ref={nameInput} type="text" placeholder="Enter your first name" required />
                           </div>
                           <div className="input-box">
                             <span className="details">Last name</span>
-                            <input type="text" placeholder="Enter your last name" required />
+                            <input ref={lastNameInput} type="text" placeholder="Enter your last name" required />
                           </div>
                           <div className="input-box">
                             <span className="details">Email</span>
-                            <input type="text" placeholder="Enter your email" required />
+                            <input ref={emailInput} type="text" placeholder="Enter your email" required />
                           </div>
                           <div className="input-box">
                             <span className="details">Phone Number</span>
-                            <input type="text" placeholder="Enter your number" required />
+                            <input ref={phoneInput} type="text" placeholder="Enter your number" required />
                           </div>
-                          <div class="input-box">
+                          <div className="input-box">
                             <p>Date</p>
-                            <input type="date" />
+                            <input ref={dateInput} type="date" />
                           </div>
-                          <div class="input-box">
+                          <div className="input-box">
                             <p>Time</p>
-                            <input type="time"/>
+                            <input ref={timeInput} type="time"/>
                           </div>
                         </div>
                         <div className="button">
@@ -78,7 +92,5 @@ export default function BookModal({ open, onClose }) {
           </div>
         </div>
       </div>
-
-    ))
   )
 }
