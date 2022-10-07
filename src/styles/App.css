@@ -5,9 +5,10 @@
   font-family: 'PT Sans', sans-serif;
 }
 
-.home,
-.login,
-.sign-up {
+.home
+/* .login,
+.sign-up  */
+{
   display: flex;
   height: 90vh;
   align-items: center;
@@ -15,20 +16,20 @@
   font-size: 3rem;
 }
 
-.login {
+/* .login {
   background-image: url('../images/scissor 3.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
-}
+} */
 
-.sign-up {
+/* .sign-up {
   background-image: url('../images/scissors.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
-}
+} */
