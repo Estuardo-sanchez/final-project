@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from './Button';
+import ScrollButton from './ScrollButton';
 import '../styles/Header.css';
 
 export default function Header(props) {
@@ -9,13 +9,13 @@ export default function Header(props) {
       <h1>NEED A BARBER?</h1>
       <p>Find one at the click of a button</p>
       <div className='header-btns'>
-        <Button
+        <ScrollButton
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
         >
           GET STARTED
-        </Button>
+        </ScrollButton>
       </div>
     </div>
   );
