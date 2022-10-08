@@ -40,8 +40,8 @@ export const FormSignup = () => {
     }
 
   return(
-    <div className="container">
-    <div className="title">Add your barbershop!</div>
+    <div className="form-container">
+    <div className="sign-up-title">Add your barbershop!</div>
     <div className="content">
       <form onSubmit={handleCreateShop}>
         <div className="user-details">
