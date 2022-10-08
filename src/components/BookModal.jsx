@@ -28,7 +28,7 @@ export default function BookModal({ open, onClose, barbershopId, barbershopName 
     }
 
     axios.post('http://localhost:8000/api/appointments', formData)
-    .then(res => console.log(res)) // send to thank you page
+    .then(res => window.location = "/thanks-page") // send to thank you page
   }
 
   
@@ -78,7 +78,7 @@ export default function BookModal({ open, onClose, barbershopId, barbershopName 
                           </div>
                         </div>
                         <div className="button">
-                          <input type="submit" value="Register" />
+                          <input type="submit" value="Confirm" />
                         </div>
                       </form>
                     </div>
