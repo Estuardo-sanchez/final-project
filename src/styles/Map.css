@@ -1,4 +1,90 @@
-.leaflet-container{
-  width:100vw;
-  height:100vh;
+.leaflet-container {
+  width: 100vw;
+  height: 100vh;
+  float: right;
+  position: relative;
+  z-index: -1;
+}
+
+
+
+.barber-img {
+  height: 100px;
+  width: 150px;
+}
+
+.w3-container {
+  contain: content;
+  width: 100 px;
+}
+
+.column {
+  padding: 1.5em;
+  width: 365px;
+  background: linear-gradient(to bottom, white 80%, gray);
+  background-color: white;
+  position: fixed;
+  height: 95%;
+  overflow: auto;
+}
+
+.side-barber-img {
+  height: 200px;
+  width: 300px;
+  border-radius: 25px;
+  flex: 1;
+  padding: 0.5em;
+  /* padding-top: 30px; */
+}
+
+.address-text {
+  font-size: small;
+  color: #767171;
+  padding-bottom: 10px;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.sidebar-shop-name {
+  font-size: 17.5px;
+  padding-bottom: 10px;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.side-btn-container {
+  padding: 5px;
+  padding-bottom: 20px;
+  z-index: -1;
+}
+
+.side-book-btn {
+  padding: 5px;
+  height: 2em;
+  width: 4em;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  background: linear-gradient(45deg, #464647, #1b1c1c);
+  color: white;
+  cursor: pointer;
+  position: relative;
+}
+
+.side-book-btn::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  background: linear-gradient(45deg, #32c3ef, #89d2ff);
+  color: white;
+  z-index: -1;
+  filter: blur(0px);
+  transition: 0.5s ease;
+}
+
+.side-book-btn:hover::after {
+  filter: blur(15px);
 }
