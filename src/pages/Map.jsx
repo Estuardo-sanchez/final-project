@@ -8,7 +8,7 @@ import SideBar from '../components/SideBar';
 
 export default function Map() {
   const [markers, setMarkers] = useState([]);
-  const position = [43.2557, -79.8711]
+  const position = [43.238250, -79.867220]
 
   useEffect(() => {
     axios.get('http://localhost:8000/api/barbershops')
@@ -27,7 +27,7 @@ export default function Map() {
         }
       </div>
       {/* map container  */}
-      <MapContainer center={position} zoom={13} scrollWheelZoom={true} style={{ height: 1280, width: "85.7%" }}>
+      <MapContainer center={position} zoom={14} scrollWheelZoom={true} style={{ height: 1280, width: "85.7%" }}>
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

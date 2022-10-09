@@ -18,8 +18,8 @@ export default function SideBarItem({shop}) {
             <p className='sidebar-shop-name'>{`${shop.name}`}</p>
             <p className='address-text'> {`${shop.street}, ${shop.city}, ${shop.province}, ${shop.post_code}`} </p>
             <div className='side-btn-container'>
-              <button className='side-book-btn' onClick={() => setOpenModal(true)} >Book</button> {shop.open_hours}
-              <BookModal open={openModal} onClose={() => setOpenModal(false)} />
+              <button className='side-book-btn' onClick={() => setOpenModal(true)} >Book</button> {shop.open_hours} 
+              <BookModal open={openModal} onClose={() => setOpenModal(false)} barbershopId={shop.id} barbershopName={shop.name}/>
             </div>
           </div>
    );

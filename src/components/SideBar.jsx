@@ -24,7 +24,7 @@ export default function SideBar() {
       {/* map side bar */}
       {
         shops.map(shop => (
-          <SideBarItem shop={shop} />
+          <SideBarItem key={shop.id} shop={shop} />
         ))
       }
     </div>
