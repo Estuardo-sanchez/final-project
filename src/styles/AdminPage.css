@@ -1,83 +1,43 @@
-.side-bar {
-  padding: 1.5em;
-  width: 365px;
-  background: linear-gradient(to bottom, rgb(21, 21, 21) 80%, gray);
-  background-color: rgb(38, 36, 36);
-  position: fixed;
-  height: 95%;
-  overflow: auto;
-}
-.sidebar--centered {
-  align-self: center;
-}
-.sidebar__separator {
-  width: 90%;
-  margin: 2rem 0;
-  border: solid 1px;
-  color: #f2f2f2;
-}
-.sidebar__menu {
-  flex: 1;
-}
-.sidebar__lhl {
-  margin-top: 2rem;
-}
-
-.schedule {
+.admin-header-container {
+  background: url('https://user-images.githubusercontent.com/93356900/194410137-1b5f4807-7c12-4892-bb1c-1050fda45c8a.jpeg') center center/cover no-repeat;
+  height: 45vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  margin: 2rem 0;
-  padding: 0 2rem;
-  width: 100%;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
 }
 
-.side-barbershop-img {
-  height: 200px;
-  width: 300px;
-  border-radius: 25px;
-  flex: 1;
-  padding: 0.5em;
-  /* padding-top: 30px; */
+.admin-header-container > h1 {
+  color: #fff;
+  font-size: 100px;
+  margin-top: -100px;
 }
 
-.address-text {
-  font-size: small;
-  color: #e9e3e3;
-  padding-bottom: 10px;
-  font-family: Georgia, 'Times New Roman', serif;
+.admin-header-container > p {
+  margin-top: 8px;
+  color: #fff;
+  font-size: 32px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
 }
 
-.sidebar-barbershop-name {
-  color: #e9e3e3;
-  font-size: 17.5px;
-  padding-bottom: 10px;
-  font-family: Georgia, 'Times New Roman', serif;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Source Sans Pro", sans-serif;
-}
-
-.layout {
-  display: flex;
-  min-height: 100vh;
-}
-
-@media only screen and (max-width: 960px) {
-  html {
-    font-size: 12px;
-  }
-  .layout {
-    flex-direction: column;
+@media screen and (max-width: 960px) {
+  .admin-header-container > h1 {
+    font-size: 70px;
+    margin-top: -150px;
   }
 }
-@media only screen and (max-width: 320px) {
-  html {
-    font-size: 10px;
+
+@media screen and (max-width: 768px) {
+  .admin-header-container > h1 {
+    font-size: 50px;
+    margin-top: -100px;
+  }
+
+  .admin-header-container > p {
+    font-size: 30px;
   }
 }

@@ -1,0 +1,183 @@
+.admin-cards {
+  padding: 4rem;
+  background: #fff;
+}
+
+.employee-title {
+  text-align: inherit;
+  padding-left: 357px;
+}
+
+.admin-cards__container {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  max-width: 1120px;
+  width: 90%;
+  margin: 500 auto;
+}
+
+.admin-cards__wrapper {
+  position: relative;
+  margin: 50px 0 45px;
+}
+
+.admin-cards__items {
+  margin-bottom: 24px;
+}
+
+.admin-cards__item {
+  display: flex;
+  flex: 1;
+  margin: 0 1rem;
+  border-radius: 10px;
+}
+
+.admin-cards__item__link {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.admin-cards__item__pic-wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 67%;
+  overflow: hidden;
+}
+
+.fade-img {
+  animation-name: fade-img;
+  animation-duration: 2s;
+}
+
+ .admin-cards__item__pic-wrap::after {
+  content: attr(data-category);
+  position: absolute;
+  bottom: 0;
+  margin-left: 10px;
+  padding: 6px 8px;
+  max-width: calc((100%) - 60px);
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #1f98f4;
+  box-sizing: border-box;
+} 
+
+ .admin-cards__item__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  transition: all 0.2s linear;
+}
+
+.admin-cards__item__img:hover {
+  transform: scale(1.1);
+  filter:brightness(0.5);
+  transition: 0.5s ease;
+}
+
+.admin-cards__item__info {
+  padding: 20px 30px 30px;
+}
+
+.admin-cards__item__text {
+  color: #252e48;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .content__blog__container {
+    width: 84%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .admin-cards__items {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .admin-cards__item {
+    margin-bottom: 2rem;
+  }
+} 
+
+
+
+
+
+/*second part!
+
+/* .employee-card {
+  height: 200px;
+  width: 200px;
+  border-radius: 10%;
+
+  display: grid;
+  place-items:center;
+  grid-template-areas: "main";
+
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.employee-card > * {
+  grid-area: main;
+}
+
+.employee-card > .employee-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+
+  transition: transform 400ms, filter 400ms;
+}
+
+.employee-card > .employee-name {
+  opacity: 0;
+  color: white;
+  font-size: 1.8em;
+
+  transition: opacity 400ms, transform 400ms;
+}
+
+.employee-card:is(:hover, :focus) > .employee-image {
+  transform: scale(1.1);
+  filter: brightness(0.4);
+}
+
+.employee-card:is(:hover, :focus) > .employee-name {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.admin-cards {
+  display: inline;
+} */
+
+
+
+
+
+
+
+
