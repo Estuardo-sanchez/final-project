@@ -24,7 +24,7 @@ flex-direction: column;
   text-align:center;
 }
 .thanks-title{
-    font-family: 'Kaushan Script', cursive;
+    /* font-family: 'Kaushan Script', cursive; */
   font-size:4em;
   letter-spacing:3px;
   color:#242424;
