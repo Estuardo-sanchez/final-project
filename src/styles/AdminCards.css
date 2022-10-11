@@ -3,18 +3,13 @@
   background: #fff;
 }
 
-.employee-title {
-  text-align: inherit;
-  padding-left: 357px;
-}
-
 .admin-cards__container {
   display: flex;
   flex-flow: row;
   align-items: center;
   max-width: 1120px;
   width: 90%;
-  margin: 500 auto;
+  margin-left: 150px;
 }
 
 .admin-cards__wrapper {
@@ -67,7 +62,7 @@
   font-size: 12px;
   font-weight: 700;
   color: #fff;
-  background-color: #1f98f4;
+  background-color: #6d696a;
   box-sizing: border-box;
 } 
 
@@ -111,6 +106,7 @@
 @media only screen and (min-width: 1024px) {
   .admin-cards__items {
     display: flex;
+    width: 1000px;
   }
 }
 
@@ -119,65 +115,3 @@
     margin-bottom: 2rem;
   }
 } 
-
-
-
-
-
-/*second part!
-
-/* .employee-card {
-  height: 200px;
-  width: 200px;
-  border-radius: 10%;
-
-  display: grid;
-  place-items:center;
-  grid-template-areas: "main";
-
-  overflow: hidden;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.employee-card > * {
-  grid-area: main;
-}
-
-.employee-card > .employee-image {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-
-  transition: transform 400ms, filter 400ms;
-}
-
-.employee-card > .employee-name {
-  opacity: 0;
-  color: white;
-  font-size: 1.8em;
-
-  transition: opacity 400ms, transform 400ms;
-}
-
-.employee-card:is(:hover, :focus) > .employee-image {
-  transform: scale(1.1);
-  filter: brightness(0.4);
-}
-
-.employee-card:is(:hover, :focus) > .employee-name {
-  transform: scale(1.2);
-  opacity: 1;
-}
-
-.admin-cards {
-  display: inline;
-} */
-
-
-
-
-
-
-
-

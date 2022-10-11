@@ -7,96 +7,46 @@ export default function AdminCards() {
   return (
     <div className="admin-cards">
       <AdminCalender />
-      <h1 className="employee-title">The Team</h1>
       <div className="admin-cards__container">
         <div className="admin-cards__wrapper">
           <ul className="admin-cards__items">
             <AdminCardItem
-              src='https://staticg.sportskeeda.com/editor/2022/05/601c7-16519585426515-1920.jpg'
-              text="Luffy"
-              label="Hamilton"
-              path='Map'
+              src='https://i.pinimg.com/originals/89/90/e0/8990e0304c44794197af164ab0138011.jpg'
+              text="Hours: 9:00 - 5:30"
+              label="Matt"
             />
             <AdminCardItem
-              src='https://sportshub.cbsistatic.com/i/2021/08/09/b9334c48-cc42-474f-ae5e-b2b3b0884cb0/one-piece-wano-zoro-1277439.jpg?width=1200'
-              text="zoro"
-              label="Toronto"
-              path=''
+              src='https://user-images.githubusercontent.com/93356900/194973383-f50283af-b2d1-406c-8802-a73d7574f093.jpeg'
+              text="Hours: 12:00 - 9:00"
+              label="Skylar"
             />
             <AdminCardItem
-              src='https://images4.alphacoders.com/116/1164403.jpg'
-              text="Local Mississauga shops"
-              label="Mississauga"
-              path=''
+              src='https://user-images.githubusercontent.com/93356900/194978653-d17b4b43-38de-4032-a66d-1299820dea34.jpeg'
+              text="Hours: 12:00 - 9:00"
+              label="Tony"
             />
           </ul>
           <ul className="admin-cards__items">
             
             <AdminCardItem
-              src='https://www.wallpaperflare.com/static/933/5/80/one-piece-anime-usopp-one-wallpaper.jpg'
-              text="Local Brampton shops"
-              label="Brampton"
-              path=''
+              src='https://user-images.githubusercontent.com/93356900/194978820-7a1ee034-25be-4c88-90e7-b9093a7f83cb.jpeg'
+              text="Hours: 9:00 - 5:30"
+              label="Brandon"
             />
             <AdminCardItem
-              src='https://i.pinimg.com/originals/22/10/8a/22108aa812b41ba9fb4f166d96fb0a52.jpg'
-              text="Local Niagara shops"
-              label="Niagara"
-              path=''
+              src='https://user-images.githubusercontent.com/93356900/194979262-ec8d1d6d-b73b-4c07-a4a5-8f373aa9f210.jpeg'
+              text="Hours: 9:00 - 5:30"
+              label="Jess"
             />
             <AdminCardItem
-              src='https://static1.cbrimages.com/wordpress/wp-content/uploads/2021/06/One-Piece-Nami-Climate-Baton-header.png'
-              text="Local Mississauga shops"
-              label="Mississauga"
-              path=''
+              src='https://user-images.githubusercontent.com/93356900/194980456-f0a35e6f-afc2-494c-b025-d7a986cd56f3.jpeg'
+              text="Time-Off"
+              label="Josh"
             />
           </ul>
         </div>
       </div>
     </div>
     
-    
-    
-    
-    
-    
-    //2nd part
-    // <div>
-
-
-    // <ul className="admin-cards">
-    
-    // <li className="employee-card">
-    //   <img className="employee-image" src="https://sportshub.cbsistatic.com/i/2021/08/09/b9334c48-cc42-474f-ae5e-b2b3b0884cb0/one-piece-wano-zoro-1277439.jpg?width=1200" alt="zoro" />
-    //   <p className="employee-name">Zoro</p>
-    // </li>
-    // <li className="employee-card">
-    //   <img className="employee-image" src="https://sportshub.cbsistatic.com/i/2021/08/09/b9334c48-cc42-474f-ae5e-b2b3b0884cb0/one-piece-wano-zoro-1277439.jpg?width=1200" alt="zoro" />
-    //   <p className="employee-name">Zoro</p>
-    // </li>
-    // <li className="employee-card">
-    //   <img className="employee-image" src="https://sportshub.cbsistatic.com/i/2021/08/09/b9334c48-cc42-474f-ae5e-b2b3b0884cb0/one-piece-wano-zoro-1277439.jpg?width=1200" alt="zoro" />
-    //   <p className="employee-name">Zoro</p>
-    // </li>
-
-    // </ul>
-    // <ul>
-    
-    // <li className="employee-card">
-    //   <img className="employee-image" src="https://sportshub.cbsistatic.com/i/2021/08/09/b9334c48-cc42-474f-ae5e-b2b3b0884cb0/one-piece-wano-zoro-1277439.jpg?width=1200" alt="zoro" />
-    //   <p className="employee-name">Zoro</p>
-    // </li>
-    // <li className="employee-card">
-    //   <img className="employee-image" src="https://sportshub.cbsistatic.com/i/2021/08/09/b9334c48-cc42-474f-ae5e-b2b3b0884cb0/one-piece-wano-zoro-1277439.jpg?width=1200" alt="zoro" />
-    //   <p className="employee-name">Zoro</p>
-    // </li>
-    // <li className="employee-card">
-    //   <img className="employee-image" src="https://sportshub.cbsistatic.com/i/2021/08/09/b9334c48-cc42-474f-ae5e-b2b3b0884cb0/one-piece-wano-zoro-1277439.jpg?width=1200" alt="zoro" />
-    //   <p className="employee-name">Zoro</p>
-    // </li>
-
-    // </ul>
-
-    // </div>
   )
 }
