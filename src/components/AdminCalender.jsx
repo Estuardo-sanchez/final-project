@@ -15,7 +15,6 @@ export function AdminCalender() {
   }, [])
 
   return (
-    appointments.map(appointment => (
     <div className="calendar dark">
       <div className="calendar_header">
         <h1 className="header_title">Appointments</h1>
@@ -27,9 +26,9 @@ export function AdminCalender() {
           <div className="cl_copy">22nd  April  2018</div>
         </div>
       </div>
+        {appointments.map((appointment, index) => (
       <div className="calendar_events">
         <p className="ce_title">Upcoming appointments</p>
-        {appointments.map((appointment, index) => (
           <div key={index} className="event_item">
             <div className="ei_Dot dot_active"></div>
             <ul className="ei_Title">
@@ -39,8 +38,8 @@ export function AdminCalender() {
             </ul>
             <div className="ei_Copy">{appointment.name} {appointment.last_name}</div>
           </div>
-        ))}
       </div>
+        ))}
     </div>
   )
 };
