@@ -20,7 +20,8 @@ export default function ScrollButton({
   const ref = useRef(null);
 
   const handleClick = () => {
-    ref.current?.scrollIntoView({behavior: 'smooth'});
+    const element = document.getElementById('testScroll')
+    element.scrollIntoView({behavior: 'smooth', block: 'center', inline: 'nearest'});
   };
 
   return (

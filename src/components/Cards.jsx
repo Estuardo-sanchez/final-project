@@ -4,14 +4,14 @@ import '../styles/Cards.css';
 
 export default function Cards() {
   return (
-    <div className="cards">
+    <div id='testScroll' className="cards">
       <h1>Check out local shops</h1>
       <div className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__items">
             <CardItem
               src='https://www.travellens.co/content/images/2022/01/Hamilton.jpeg'
-              text="Local Hamilton shops"
+              text="Local hamilton shops"
               label="Hamilton"
               path='Map'
             />
