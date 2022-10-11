@@ -15,6 +15,7 @@ export function AdminCalender() {
   }, [])
 
   return (
+    appointments.map(appointment => (
     <div className="calendar dark">
       <div className="calendar_header">
         <h1 className="header_title">Appointments</h1>

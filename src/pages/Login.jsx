@@ -1,13 +1,14 @@
-import React from "react";
+import  React from "react";
 import "../styles/Login.css";
 
-
 export default function Login() {
+
+
   return (
     <div className="form-container">
-      <div className="login-title">Login!</div>
+      <div className="login-title">Admin Login!</div>
       <div className="content">
-        <form>
+        <form action="/admin-page">
           <div className="user-details">
             <div className="input-box">
               <span className="details">Email</span>

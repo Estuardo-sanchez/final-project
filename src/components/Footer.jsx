@@ -7,11 +7,10 @@ export default function Footer() {
     <div className="footer-container">
       <section className="footer-subscription">
         <p className="footer-subscription-heading">
-          Sign up for BOOK'D newsletter for deals around Your
-          local barbershops
+          Sign up for the BOOK'D newsletter to recieve deals for your next appointment!
         </p>
         <p className="footer-subscription-text">
-          You can unsubscribe any time.
+          You can unsubscribe at any time.
         </p>
         <div className="input-areas">
           <form>
