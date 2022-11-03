@@ -23,7 +23,7 @@ export function AdminCalender() {
       <div className="calendar_plan">
         <div className="cl_plan">
           <div className="cl_title">Today</div>
-          <div className="cl_copy">22nd  April  2018</div>
+          <div className="cl_copy">13th  October  2022</div>
         </div>
       </div>
         {appointments.map((appointment, index) => (

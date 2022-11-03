@@ -9,8 +9,14 @@
 
 
 .barber-img {
-  height: 100px;
-  width: 150px;
+  height: 170px;
+  width: 200px;
+}
+
+.leaflet-popup-content {
+  width: 200px;
+  height: 200px;
+  font-size: 1.2em;
 }
 
 .w3-container {
