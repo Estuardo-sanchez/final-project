@@ -11,7 +11,7 @@ export default function Cards() {
           <ul className="cards__items">
             <CardItem
               src='https://www.travellens.co/content/images/2022/01/Hamilton.jpeg'
-              text="Local hamilton shops"
+              text="Local Hamilton shops"
               label="Hamilton"
               path='Map'
             />
