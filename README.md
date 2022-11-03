@@ -18,3 +18,18 @@ The front end was built with React and makes requests to the [final-project-api]
 
 ## Add your barbershop
 ![final-project homepage](https://user-images.githubusercontent.com/93778202/199635057-078eab96-3db7-4cc7-b750-e5e0f3e2c01b.jpg)
+
+## Setup
+  - Fork and clone this repo.
+  - install dependencies with 'npm install'
+  - Fork and clone the [final-project-api](https://github.com/Estuardo-sanchez/final-project-api).
+  - Open two seperate terminal windows for final-project-api & final-project.
+  - Run both servers with 'npm start'.
+
+  ## Dependencies
+  - axios
+  - react
+  - react-dom
+  - react-scripts
+  - react-leaflet
+  - react-router-dom
